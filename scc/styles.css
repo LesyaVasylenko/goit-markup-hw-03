@@ -50,13 +50,14 @@ body {
 .header {
   width: 1600px;
   margin: 0 auto;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .container {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-logo {
@@ -109,7 +110,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--mine-text-color);
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   margin-left: auto;
 }
 
@@ -240,14 +241,15 @@ body {
 .team {
   width: 1600px;
   margin: 0 auto;
+  background: var(--btn-team-bg-color);
 }
+
 .container-team-card {
   display: flex;
-  background: var(--btn-team-bg-color);
   justify-content: space-between;
 }
 
-.team-card {
+.team-list {
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -272,10 +274,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--mine-text-color);
   padding-bottom: 30px;
-}
-
-.team-box {
-  background-color: var(--text-teambox-btnhover-color);
 }
 
 /* ---------------------- footer ----------------------*/
@@ -333,6 +331,9 @@ body {
 }
 
 /* ---------------------- portfolio ----------------------*/
+.header-logo-pf {
+  margin-right: 95px;
+}
 
 .header-logo-pf {
   font-family: "Raleway";
@@ -342,21 +343,72 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
 .header-pre-logo-pf {
   color: var(--btn-link-hover-color);
 }
+
 .header-after-logo-pf {
   color: #000000;
 }
+
+.filters {
+  width: 610px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.filters-list {
+  display: flex;
+  padding-bottom: 50px;
+  white-space: nowrap;
+}
+
+.filters-btn {
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+
+.filters-item {
+  border: none;
+}
+
+.filters-item:not(:last-child) {
+  padding-right: 8px;
+}
+
+.projekt-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projekt-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.projekt-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .projekt-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  padding: 20px 24px 4px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
+
 .projekt-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--mine-text-color);
+  padding: 0 24px 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
