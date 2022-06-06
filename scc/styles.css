@@ -43,7 +43,6 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 /* ---------------------- header ----------------------*/
@@ -102,6 +101,11 @@ body {
 }
 
 .header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-mail {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -109,9 +113,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--mine-text-color);
-  display: flex;
-  /* justify-content: flex-end; */
-  margin-left: auto;
 }
 
 .header-tel {
@@ -125,6 +126,8 @@ body {
   padding-left: 50px;
 }
 
+.header-mail:hover,
+.header-mail:focus,
 .header-tel:hover,
 .header-tel:focus {
   color: var(--btn-link-hover-color);
@@ -350,6 +353,10 @@ body {
 
 .header-after-logo-pf {
   color: #000000;
+}
+.portfolio {
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .filters {
