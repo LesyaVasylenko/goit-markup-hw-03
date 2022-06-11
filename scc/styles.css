@@ -45,7 +45,7 @@ body {
 
 /* ---------------------- header ----------------------*/
 .header {
-  padding: 24px 25px;
+  padding: 24px 0 25px 0;
   border-bottom: 1px solid #ececec;
 }
 
